@@ -1,3 +1,7 @@
 __pycache__
 /venv
 .env
+/chroma_store
+/figures
+/uploads
+processed.json
