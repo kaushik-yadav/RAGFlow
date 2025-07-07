@@ -14,7 +14,7 @@ API_KEY = os.getenv("ALCHEMY_API_KEY")
 PARAMS = {
     "sample_rate": 16000,
     "format_turns": True,
-    "endpointing": 0.8
+    "endpointing": 5
 }
 WS_URL = "wss://streaming.assemblyai.com/v3/ws?" + urlencode(PARAMS)
 
@@ -79,6 +79,11 @@ def transcribe_user_question(timeout: float = 10.0) -> str:
     thread = threading.Thread(target=ws.run_forever, daemon=True)
     thread.start()
 
-    # wait for result or timeout
-    _done.wait(timeout=timeout)
+    # wait for result or timeout (max 60 seconds to be safe)
+    try:
+        _done.wait(timeout=min(timeout, 60.0))  # cap timeout to avoid OverflowError
+    except OverflowError:
+        print("Invalid timeout value. Using 10 seconds fallback.")
+        _done.wait(timeout=10.0)
+
     return _result["text"] or "No speech detected"
