@@ -1,6 +1,6 @@
 <div align="center">
   <img src="assets/logo.png" alt="Architecture Diagram" height="150" width="250"/>
-  <p><em>A Voice-Driven Multimodal RAG System for Intelligent Document Q&A</em></p>
+  <p><em>><strong>A Voice-Driven Multimodal RAG System for Intelligent Document Q&A</strong></em></p>
 
 </div>
 
@@ -157,10 +157,3 @@ streamlit run app.py
 | STT              | AssemblyAI          |
 | Answering LLMs   | Gemini 2.5 / LLaMA4 |
 
----
-
-* A `LICENSE` file
-* GitHub badges (build, stars, etc.)
-* Deployment instructions (e.g. Render, Vercel, HuggingFace Spaces)
-
-I'll add it for you.
