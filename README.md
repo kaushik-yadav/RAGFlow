@@ -1,6 +1,6 @@
 <div align="center">
   <img src="assets/logo.png" alt="Architecture Diagram" height="150" width="250"/>
-  <p><em>><strong>A Voice-Driven Multimodal RAG System for Intelligent Document Q&A</strong></em></p>
+  <p><em><strong>A Voice-Driven Multimodal RAG System for Intelligent Document Q&A</strong></em></p>
 
 </div>
 
@@ -22,7 +22,7 @@ Whether your document has visual diagrams, structured tables, or rich text, **RA
 ## 🧩 Core Features
 
 ✅ PDF Ingestion with image, table, and text extraction  
-✅ Captioning of figures using **Gemini Vision**/**Groq Vision**(Groq models accessible from 'rag_whole.py')
+✅ Captioning of figures using **Gemini Vision**/**Groq Vision**(Groq models accessible from 'rag_whole.py')<br>
 ✅ Chunking via title-aware strategy and figure metadata  
 ✅ Embedding using **Cohere** models  
 ✅ Vector storage in **ChromaDB**  
