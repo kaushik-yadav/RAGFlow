@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Architecture Diagram" height="150" width="250"/>
+  <img src="assets/logo.png" alt="RAGFlow logo" height="150"/>
   <p><em><strong>A Voice-Driven Multimodal RAG System for Intelligent Document Q&A</strong></em></p>
 
 </div>
